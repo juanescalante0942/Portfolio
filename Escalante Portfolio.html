@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!--Desktop Nav-->
+    <nav id="desktop-nav">
+        <div class="logo">/JE</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---Burger Nav-->
+    <nav id="hamburger-nav">
+        <div class="logo">/JE</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" class="underline" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!--About-->
+    <section class="about-section hidden" id="about">
+        <div class="section-pic-container">
+            <img src="pic.png" alt="John Doe profile picture" />
+        </div>
+        <div class="section-text">
+            <h1 class="title">Hello, I'm Juan Escalante</h1>
+            <p class="section-text-p1">
+                Welcome to my portfolio! I'm currently an Information Technology tertiary student who creates
+                visually appealing and responsive web interfaces using HTML, CSS, and JavaScript.
+                I also create systems and programs using other programming languages.
+                With a focus on user-friendly design and performance,
+                I transform ideas into interactive web experiences.
+                <br>Explore my work and let's connect!
+            </p>
+            <div class="socials-container">
+                <img 
+                    src="github.svg" 
+                    alt="Github Profile"
+                    class="icon"
+                    onclick="window.open('https://github.com/juanescalante0942', '_blank')"
+                />
+                <img 
+                    src="linkedin.svg" 
+                    alt="LinkedIn Profile"
+                    class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/juanescalante0942/', '_blank')"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section class="skills-section hidden" id="skills">
+        <h2 class="section-title">/Languages_&_Techs</h2>
+        <div class="section-container">
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="html.svg" />
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="css.svg" alt="" />
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="js.svg" alt="" />
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="sql.svg" alt="" />
+                    <h3>SQL</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="firebase.svg" alt="" />
+                    <h3>Firebase</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="java.svg" alt="" />
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="csharp.svg" alt="" />
+                    <h3>C#</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="python.svg" alt="" />
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="android.svg" alt="" />
+                    <h3>Android Studio</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="figma.svg" alt="" />
+                    <h3>Figma</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section class="projects-section hidden" id="projects">
+        <h2 class="section-title">/Projects</h2>
+        <div class="projects-container">
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <div class="content">
+                            <img src="trabahadoor.png" />
+                            <h3>TrabahaDoor</h3>
+                        </div>
+                    </div>
+                    <div class="back1">
+                        <div class="content">
+                            <p>TrabahaDoor is a mobile application where users are able to find and contact suitable professionals to provide them with their needed services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <div class="content">
+                            <img src="friendzone.png" />
+                            <h3>FriendZone</h3>
+                        </div>
+                    </div>
+                    <div class="back2">
+                        <div class="content">
+                            <p>FriendZone is a mobile application that allows users to share their location, chat and locate their friends, and family where ever they are.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <div class="content">
+                            <img src="buildx.png" />
+                            <h3>BuildX Store</h3>
+                        </div>
+                    </div>
+                    <div class="back3">
+                        <div class="content">
+                            <p>BuildX Store is a windows application that helps create a digital interface for hardwares to create a easier ordering process, and sort out inventory and active orders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" onclick="window.open('https://rcvj-recruit.site', '_blank')">
+                <div class="card">
+                    <div class="front">
+                        <div class="content">
+                            <img src="logo.jpg" style="border-radius: 10px;"/>
+                            <h3>RCVJ, Inc. Online Recruitment System</h3>
+                        </div>
+                    </div>
+                    <div class="back4">
+                        <div class="content">
+                            <p>Our capstone project, an online recruitment system integrated with data mining and job matching algorithms made for RCVJ, Inc. to help streamline the recruitment process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section hidden" id="contact">
+        <h1 class="section-title">/Contact_Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container" onclick="window.open('mailto:juanescalante0942@gmail.com', '_blank')">
+                <img
+                    src="email.svg"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                />
+            </div>
+            <div class="contact-info-container" onclick="window.open('https://www.linkedin.com/in/juan-miguel-escalante-b09b742b6/', '_blank')">
+                <img
+                    src="linkedin.svg"
+                    alt="LinkedIn icon"
+                    class="icon email-icon"
+                />
+            </div>
+            <div class="contact-info-container" onclick="window.open('https://www.facebook.com/JuanEscalante04', '_blank')">
+                <img
+                    src="fb.svg"
+                    alt="Facebook icon"
+                    class="icon email-icon"
+                />
+            </div>
+            <div class="contact-info-container" onclick="window.open('https://www.instagram.com/juaaanyy/', '_blank')">
+                <img
+                    src="insta.svg"
+                    alt="Instagram icon"
+                    class="icon email-icon"
+                />
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2024 Juan Escalante. All Rights Reserved.</p>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>
